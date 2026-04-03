@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   const path = req.query.path ? req.query.path.join("/") : "";
-  const targetUrl = `https://openrouter.ai/api/v1/${path}`;
+  const targetUrl = `https://openrouter.ai/api/${path}`;
 
   const headers = {
     "Content-Type": "application/json",
